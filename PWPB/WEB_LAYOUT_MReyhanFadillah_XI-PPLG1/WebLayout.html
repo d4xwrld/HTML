@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Makanan</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <table border="1" cellspacing="0" cellpadding="0">
+      <tr>
+        <th class="top" colspan="2" align="center">HEADER</th>
+      </tr>
+      <tr>
+        <td rowspan="4">
+          <ul style="padding: 50px">
+            <h2>Menu</h2>
+            <li>
+              <a href="#makanan1">Burger P Ramlee</a>
+            </li>
+            <li>
+              <a href="WebLayout2.html">Nasi Lemak KFC</a>
+            </li>
+            <br />
+            <button value="1" id="order-btn" onclick="order()">
+              Order now!
+            </button>
+          </ul>
+        </td>
+        <td rowspan="2">
+          <section id="makanan1">
+            <table>
+              <tr>
+                <td>
+                  <img src="./images/makanan1.jpeg" alt="" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h4 class="isi">Burger P Ramlee</h4>
+                  <p class="isi">
+                    Menu inovatif terbaharu kami, Burger P. Ramlee merupakan
+                    satu menu gabungan memikat KFC Zinger dengan makanan
+                    kegemaran P. Ramlee, Nasi Kandar.
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </section>
+          <!-- <section id="makanan2">
+            <table>
+              <tr>
+                <td>
+                  <img src="./images/makanan2.jpeg" alt="" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h4 class="isi">Nasi Lemak KFC</h4>
+                  <p class="isi">
+                    Nasi Lemak KFC edisi baharu kini lebih KAW! Nasi yang lebih
+                    berlemak, sambal ekstra, dan juga ada Kari Atuk! Memang
+                    terpu-kaw habis!
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </section>
+        </td>
+      </tr> -->
+          <tr></tr>
+          <tr></tr>
+          <tr>
+            <th align="right">M Reyhan Fadillah_222310410</th>
+          </tr>
+        </td>
+      </tr>
+    </table>
+    <script>
+      function order() {
+        let type = 1;
+        localStorage.setItem("selectedType", type);
+        window.location.href = "FormLayout.html";
+      }
+    </script>
+  </body>
+</html>

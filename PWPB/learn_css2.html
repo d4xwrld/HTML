@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Makanan</title>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        scroll-behavior: smooth;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #000;
+      }
+      .menu-list {
+        flex: 1;
+        padding: 20px;
+        border-right: 1px solid #000;
+      }
+      .menu-list h1 {
+        text-align: center;
+      }
+      .menu-items {
+        list-style-type: none;
+        padding: 0;
+      }
+      .menu-item {
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      .menu-item a {
+        text-decoration: none;
+      }
+      .menu-content {
+        flex: 2;
+        padding: 20px;
+      }
+      .menu-section {
+        margin-bottom: 20px;
+      }
+      .menu-image {
+        max-width: 100%;
+        border-radius: 15px;
+        border: 1px solid black;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+      .menu-title {
+        text-align: center;
+      }
+      .footer {
+        text-align: right;
+        padding: 10px;
+        background-color: #f2f2f2;
+        border-top: 1px solid #000;
+      }
+      .header {
+        text-align: center;
+        border-top: 1px solid #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h2>HEADER</h2>
+    </div>
+    <div class="container">
+      <div class="menu-list">
+        <h1>Menu Makanan</h1>
+        <ul class="menu-items">
+          <li class="menu-item"><a href="#makanan1">Burger P Ramlee</a></li>
+          <li class="menu-item"><a href="#makanan2">Nasi Lemak KFC</a></li>
+        </ul>
+      </div>
+      <div class="menu-content">
+        <section id="makanan1" class="menu-section">
+          <img
+            src="./images/makanan1.jpeg"
+            alt="Burger P Ramlee"
+            class="menu-image"
+          />
+          <h4 class="menu-title">Burger P Ramlee</h4>
+          <p class="menu-description">
+            Menu inovatif terbaharu kami, Burger P. Ramlee merupakan satu menu
+            gabungan memikat KFC Zinger dengan makanan kegemaran P. Ramlee, Nasi
+            Kandar.
+          </p>
+        </section>
+        <section id="makanan2" class="menu-section">
+          <img
+            src="./images/makanan2.jpeg"
+            alt="Nasi Lemak KFC"
+            class="menu-image"
+          />
+          <h4 class="menu-title">Nasi Lemak KFC</h4>
+          <p class="menu-description">
+            Nasi Lemak KFC edisi baharu kini lebih KAW! Nasi yang lebih
+            berlemak, sambal ekstra, dan juga ada Kari Atuk! Memang terpu-kaw
+            habis!
+          </p>
+        </section>
+        <div class="footer">M Reyhan Fadillah_222310410</div>
+      </div>
+    </div>
+  </body>
+</html>

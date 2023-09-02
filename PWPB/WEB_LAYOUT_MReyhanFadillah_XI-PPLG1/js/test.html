@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contoh Halaman</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+
+      .content-button {
+        margin: 10px;
+        padding: 5px 10px;
+        font-size: 16px;
+      }
+
+      .content-section {
+        display: none;
+        margin: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="button1" class="content-button" data-target="section1">
+      Tampilkan Section 1
+    </button>
+    <button id="button2" class="content-button" data-target="section2">
+      Tampilkan Section 2
+    </button>
+
+    <div id="section1" class="content-section">
+      <h2>Section 1</h2>
+      <p>Ini adalah konten dari Section 1.</p>
+    </div>
+
+    <div id="section2" class="content-section">
+      <h2>Section 2</h2>
+      <p>Ini adalah konten dari Section 2.</p>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const buttons = document.querySelectorAll(".content-button");
+        const sections = document.querySelectorAll(".content-section");
+
+        buttons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const target = this.getAttribute("data-target");
+
+            sections.forEach((section) => {
+              section.style.display = "none";
+            });
+
+            const selectedSection = document.getElementById(target);
+            if (selectedSection) {
+              selectedSection.style.display = "block";
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
