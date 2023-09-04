@@ -34,13 +34,13 @@
       td {
         padding: 10px;
       }
-        #order-btn {
-          background-color: gray;
-          color: white;
-          padding: 10px 50px;
-          border-radius: 5px;
-          float: right;
-        }
+      #order-btn {
+        background-color: gray;
+        color: white;
+        padding: 10px 50px;
+        border-radius: 5px;
+        float: right;
+      }
       .bg-table {
         background-color: rgba(0, 0, 0, 0.5);
       }
@@ -51,121 +51,138 @@
   </head>
   <body>
     <center>
-    <table width="100%" border="1" cellspacing="0" cellpadding="0">
-      <tr>
-        <th class="top" colspan="2" align="center">HEADER</th>
-      </tr>
-      <tr>
-        <td rowspan="4">
-          <ul style="padding: 15px;">
-            <h2>Menu</h2>
-            <li>
-              <a href="WebLayout.html">Burger P Ramlee</a>
-            </li>
-            <li>
-              <a href="WebLayout2.html">Nasi Lemak KFC</a>
-            </li>
-            <br />
-            <button id="order-btn" value="2" onclick="order()">
-              Order now!
-            </button>
-          </ul>
-        </td>
-        <td rowspan="2">
-          <form id="pesan" action="WebLayout.html" name="order" method="post">
-            <table border="0" class="bg-table">
-              <tr>
-                <td>
-                  <table border="0" cellpadding="0" cellspacing="0">
-                    <tr>
-                      <th class="head" colspan="3">
-                        <h1>FORM PEMESANAN</h1>
-                      </th>
-                    </tr>
-                    <tr>
-                      <td>Menu Makanan</td>
-                      <td>:</td>
-                      <td>
-                        <center>
-                          <select id="menu" onchange="updatePrice();">
-                            <option value="BurgerPRamlee">Burger P Ramlee
-                            </option>
-                            <option value="NasiLemak">Nasi Lemak KFC</option>
-                          </select>
-                        </center>
-                      </td>
-                    </tr>
-                    <tr>
+      <table width="100%" border="1" cellspacing="0" cellpadding="0">
+        <tr>
+          <th class="top" colspan="2" align="center">HEADER</th>
+        </tr>
+        <tr>
+          <td rowspan="4">
+            <ul style="padding: 15px">
+              <h2>Menu</h2>
+              <li>
+                <a href="WebLayout.html">Burger P Ramlee</a>
+              </li>
+              <li>
+                <a href="WebLayout2.html">Nasi Lemak KFC</a>
+              </li>
+              <br />
+              <button
+                id="order-btn"
+                value="2"
+                onclick="window.location.href='WebLayout.html';"
+              >
+                Back
+              </button>
+            </ul>
+          </td>
+          <td rowspan="2">
+            <form id="pesan" action="WebLayout.html" name="order" method="post">
+              <table border="0" class="bg-table">
+                <tr>
+                  <td>
+                    <table border="0" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <th class="head" colspan="3">
+                          <h1>FORM PEMESANAN</h1>
+                        </th>
+                      </tr>
+                      <tr>
+                        <td>Menu Makanan</td>
+                        <td>:</td>
+                        <td>
+                          <center>
+                            <select id="menu" onchange="updatePrice();">
+                              <option value="BurgerPRamlee">
+                                Burger P Ramlee
+                              </option>
+                              <option value="NasiLemak">Nasi Lemak KFC</option>
+                            </select>
+                          </center>
+                        </td>
+                      </tr>
+                      <tr>
                         <td>Harga</td>
                         <td>:</td>
                         <td name="harga"></td>
-                    </tr>
-                    <tr>
-                      <td>Jumlah Pesan</td>
-                      <td>:</td>
-                      <td>
-                        <input type="number" min="1" name="porsi" id="porsi" onchange="updatePrice()" />
-                        Porsi
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Pembayaran</td>
-                      <td>:</td>
-                      <td>
-                        <input
-                          type="radio"
-                          name="payment"
-                          value="Transfer"
-                          id="payment"
-                        />Transfer
-                        <input
-                          type="radio"
-                          name="payment"
-                          value="COD"
-                          id="payment"
-                        />COD
-                      </td>
-                    </tr>
-                    <tr>
+                      </tr>
+                      <tr>
+                        <td>Jumlah Pesan</td>
+                        <td>:</td>
+                        <td>
+                          <input
+                            type="number"
+                            min="1"
+                            name="porsi"
+                            id="porsi"
+                            onchange="updatePrice()"
+                          />
+                          Porsi
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Pembayaran</td>
+                        <td>:</td>
+                        <td>
+                          <input
+                            type="radio"
+                            name="payment"
+                            value="Transfer"
+                            id="payment"
+                          />Transfer
+                          <input
+                            type="radio"
+                            name="payment"
+                            value="COD"
+                            id="payment"
+                          />COD
+                        </td>
+                      </tr>
+                      <tr>
                         <td>Total</td>
                         <td>:</td>
-                        <td name="total" id="total" value="hasil" onclick="jumlahHarga()"></td>
+                        <td
+                          name="total"
+                          id="total"
+                          value="hasil"
+                          onclick="jumlahHarga()"
+                        ></td>
                       </tr>
-                    <tr>
-                      <td>Alamat Kirim</td>
-                      <td>:</td>
-                      <td>
-                        <textarea
-                          name="alamat"
-                          id="alamat"
-                          cols="25"
-                          placeholder="Jalan, Kampung/Kelurahan, Kota, Kode Pos..."
-                          rows="3"
-                        ></textarea>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Ekspedisi</td>
-                      <td>:</td>
-                      <td>
-                        <select name="ekspedisi" id="ekspedisi">
-                          <option value="Go-Food">Go-Food</option>
-                          <option value="Shopee-Food">Shopee-Food</option>
-                        </select>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td colspan="3">
-                        <button id="order-btn" onclick="success()">Order</button>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </form>
-        </center>
-          <!-- <section id="makanan2">
+                      <tr>
+                        <td>Alamat Kirim</td>
+                        <td>:</td>
+                        <td>
+                          <textarea
+                            name="alamat"
+                            id="alamat"
+                            cols="25"
+                            placeholder="Jalan, Kampung/Kelurahan, Kota, Kode Pos..."
+                            rows="3"
+                          ></textarea>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Ekspedisi</td>
+                        <td>:</td>
+                        <td>
+                          <select name="ekspedisi" id="ekspedisi">
+                            <option value="Go-Food">Go-Food</option>
+                            <option value="Shopee-Food">Shopee-Food</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="3">
+                          <button id="order-btn" onclick="success()">
+                            Order
+                          </button>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </form>
+            <!-- <section id="makanan2">
             <table>
               <tr>
                 <td>
@@ -184,60 +201,61 @@
               </tr>
             </table>
           </section> -->
-        </td>
-      </tr>
-      <tr></tr>
-      <tr></tr>
-      <tr>
-        <th align="right">M Reyhan Fadillah_222310410</th>
-      </tr>
-      <!-- </td>
+          </td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr>
+          <th align="right">M Reyhan Fadillah_222310410</th>
+        </tr>
+        <!-- </td>
       </tr> -->
-    </table>
-    <script>
-      function success(){
-        const alamat = document.getElementById("alamat").value;
+      </table>
+      <script>
+        function success() {
+          const alamat = document.getElementById("alamat").value;
 
-        // if(alamat.value == null){
-        //   alert("Silahkan isi data dengan benar!");
-        // }else{
-          window.location.href="WebLayout.html";
+          // if(alamat.value == null){
+          //   alert("Silahkan isi data dengan benar!");
+          // }else{
+          window.location.href = "WebLayout.html";
           alert("Pesanan berhasil");
-        // }
-      }
-      function updatePrice() {
-        const selectElement = document.getElementById("menu");
-        const hargaElement = document.getElementsByName("harga")[0];
-        const totalHarga = document.getElementById("total");
-        const selectedType = selectElement.value;
-        let porsi = document.getElementById("porsi").value;
-        let harga1 = 15000;
-        let harga2 = 20000;
-        let hasil = 0;
-
-        if (selectedType === "BurgerPRamlee") {
-          hargaElement.innerHTML = "<span>Rp. 15000</span>";
-          hasil = harga1 * porsi;
-        } else if (selectedType === "NasiLemak") {
-          hargaElement.innerHTML = "<span>Rp. 20000</span>";
-          hasil = harga2 * porsi;
+          // }
         }
-        totalHarga.innerHTML = "<span'>Rp." + hasil + "</span>";
-      }
+        function updatePrice() {
+          const selectElement = document.getElementById("menu");
+          const hargaElement = document.getElementsByName("harga")[0];
+          const totalHarga = document.getElementById("total");
+          const selectedType = selectElement.value;
+          let porsi = document.getElementById("porsi").value;
+          let harga1 = 15000;
+          let harga2 = 20000;
+          let hasil = 0;
 
-      document.addEventListener("DOMContentLoaded", function () {
-        const selectElement = document.getElementById("menu");
-        const hargaElement = document.getElementsByName("harga")[0];
-        const selectedType = localStorage.getItem("selectedType");
-      
-        if (selectedType === "1") {
-          selectElement.value = "BurgerPRamlee";
-          hargaElement.innerHTML = "<span>Rp. 15000</span>";
-        } else {
-          selectElement.value = "NasiLemak";
-          hargaElement.innerHTML = "<span>Rp. 20000</span>";
+          if (selectedType === "BurgerPRamlee") {
+            hargaElement.innerHTML = "<span>Rp. 15000</span>";
+            hasil = harga1 * porsi;
+          } else if (selectedType === "NasiLemak") {
+            hargaElement.innerHTML = "<span>Rp. 20000</span>";
+            hasil = harga2 * porsi;
+          }
+          totalHarga.innerHTML = "<span'>Rp." + hasil + "</span>";
         }
-      });
-    </script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+          const selectElement = document.getElementById("menu");
+          const hargaElement = document.getElementsByName("harga")[0];
+          const selectedType = localStorage.getItem("selectedType");
+
+          if (selectedType === "1") {
+            selectElement.value = "BurgerPRamlee";
+            hargaElement.innerHTML = "<span>Rp. 15000</span>";
+          } else {
+            selectElement.value = "NasiLemak";
+            hargaElement.innerHTML = "<span>Rp. 20000</span>";
+          }
+        });
+      </script>
+    </center>
   </body>
 </html>

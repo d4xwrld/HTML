@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premier CSS Day-1</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .header {
+        background-color: #404040;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 12%;
+        text-decoration: none;
+      }
+
+      .topnav a:hover {
+        background-color: #f2f2f2;
+        color: black;
+      }
+
+      .column {
+        float: left;
+        padding: 10px;
+      }
+
+      .column.side {
+        width: 25%;
+      }
+
+      .column.middle {
+        width: 50%;
+      }
+
+      .row::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      @media screen and (max-width: 600px) {
+        .column.middle,
+        .column.side {
+          width: 100%;
+        }
+      }
+      .footer {
+        background-color: #161616;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">HEADER</div>
+    <div class="topnav">
+      <a href="http://" target="_blank" rel="">Link 1</a>
+      <a href="http://" target="_blank" rel="">Link 2</a>
+      <a href="http://" target="_blank" rel="">Link 3</a>
+    </div>
+    <div class="row">
+      <div class="column side">
+        <h2>Pinggir</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+      </div>
+
+      <div class="column middle">
+        <h2>Tengah</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit
+          amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget
+          elementum magna tristique. Quisque vehicula, risus eget aliquam
+          placerat, purus leo tincidunt eros, eget luctus quam orci in velit.
+          Praesent scelerisque tortor sed accumsan convallis.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+          consectetur, dolore vel quidem asperiores ipsam.
+        </p>
+      </div>
+
+      <div class="column side">
+        <h2>Pinggir</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+      </div>
+    </div>
+    <div class="footer"><footer>by gwe</footer></div>
+  </body>
+</html>
