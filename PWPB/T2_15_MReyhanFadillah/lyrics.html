@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lyrics</title>
+    <style>
+      .header {
+        background-color: #404040;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: left;
+        color: white;
+      }
+      .column {
+        display: block;
+        padding: 10px;
+      }
+
+      .column.side {
+        float: left;
+        width: 50%;
+        vertical-align: top;
+        text-align: center;
+      }
+      .column.side video {
+        border-radius: 15px;
+        max-width: 100%;
+        object-fit: cover;
+      }
+      span {
+        font-size: 100%;
+      }
+      .row::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      @media screen and (max-width: 600px) {
+        .column.middle,
+        .column.side {
+          width: 100%;
+        }
+        span {
+          margin: 10px;
+        }
+      }
+      .footer {
+        background-color: #161616;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        margin-bottom: 0;
+      }
+      .singer {
+        margin-left: 10%;
+        padding: 10px;
+        text-align: end;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">OURTUBE</div>
+    <div class="row">
+      <div class="column side">
+        <span style="font-weight: bold">Sampai Jadi Debu</span>
+        <video controls width="570" height="325">
+          <source
+            src="./video/Banda Neira menampilkan Gardika Gigih - Sampai Jadi Debu (Live).mp4"
+          />
+        </video>
+      </div>
+      <div>
+        <span>Badai Tuan telah berlalu</span><br />
+        <span>Salahkah ku menuntut mesra?</span><br />
+        <span>Setiap pagi menjelang</span><br />
+        <span>Kau di sampingku</span><br />
+        <span>Ku aman ada bersamamu</span>
+      </div>
+      <div>
+        <span>Selamanya</span><br />
+        <span>Sampai kita tua</span><br />
+        <span>Sampai jadi debu</span><br />
+        <span>Ku di liang yang satu</span><br />
+        <span>Ku di sebelahmu</span>
+      </div>
+      <div>
+        <span>Badai Puan telah berlalu</span><br />
+        <span>Salahkah ku menuntut mesra?</span><br />
+        <span>Kau di sampingku</span><br />
+        <span>Kau aman ada bersamaku</span>
+        <div>
+          <span>Selamanya</span><br />
+          <span>Sampai kita tua</span><br />
+          <span>Sampai jadi debu</span><br />
+          <span>Ku di liang yang satu</span><br />
+          <span>Ku di sebelahmu</span>
+        </div>
+        <div>
+          <div class="singer">Penulis lagu: Rara Sekar Larasati</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <footer>222310410 | M Reyhan Fadillah | XI - PPLG 1</footer>
+    </div>
+  </body>
+</html>

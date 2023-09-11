@@ -41,18 +41,29 @@
       }
 
       .column {
-        float: left;
+        display: block;
         padding: 10px;
       }
 
       .column.side {
-        width: 25%;
+        float: left;
+        width: 50%; /* Sesuaikan dengan lebar yang Anda inginkan */
+        /* margin: 2.5%; Sesuaikan dengan margin yang Anda inginkan */
+        vertical-align: top; /*Untuk mengatur tampilan ke atas */
+        text-align: center;
+      }
+      .column.side img {
+        border-radius: 15px;
+        max-width: 100%;
+      }
+      .column.side h1,
+      span {
+        font-size: 100%;
       }
 
-      .column.middle {
-        width: 50%;
-      }
-
+      /* .column.middle {
+        width: 75%;
+      } */
       .row::after {
         content: "";
         display: table;
@@ -81,30 +92,27 @@
     </div>
     <div class="row">
       <div class="column side">
-        <h2>Pinggir</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+        <img src="images/makanan2.jpeg" alt="burger" />
+        <h1>Nasi Lemak KFC</h1>
+        <span style="font-weight: bold">Rp. 15.000</span>
+        <span>
+          Nasi Lemak KFC edisi baharu kini lebih KAW! Nasi yang lebih berlemak,
+          sambal ekstra, dan juga ada Kari Atuk! Memang terpu-kaw habis!
+        </span>
+        <button id="buy" class="ghost">Buy</button>
       </div>
-
-      <div class="column middle">
-        <h2>Tengah</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit
-          amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget
-          elementum magna tristique. Quisque vehicula, risus eget aliquam
-          placerat, purus leo tincidunt eros, eget luctus quam orci in velit.
-          Praesent scelerisque tortor sed accumsan convallis.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
-          consectetur, dolore vel quidem asperiores ipsam.
-        </p>
-      </div>
-
       <div class="column side">
-        <h2>Pinggir</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+        <img src="images/makanan1.jpeg" alt="burger" />
+        <h1>Burger P Ramlee</h1>
+        <span style="font-weight: bold">Rp. 15.000</span>
+        <span>
+          Nasi Lemak KFC edisi baharu kini lebih KAW! Nasi yang lebih berlemak,
+          sambal ekstra, dan juga ada Kari Atuk! Memang terpu-kaw habis!
+        </span>
+        <button id="buy" class="ghost">Buy</button>
       </div>
     </div>
+
     <div class="footer"><footer>by gwe</footer></div>
   </body>
 </html>
