@@ -13,7 +13,7 @@
     <!-- partial:index.partial.html -->
     <div class="container" id="container">
       <div class="form-container sign-up-container">
-        <form action="#">
+        <form action="#" name="order">
           <!-- <h1>Create Account</h1>
           <div class="social-container">
             <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -21,12 +21,13 @@
             <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
           </div>
           <span>or use your email for registration</span> -->
-          <h2 style="padding-bottom: 20px">Form Menu</h2>
+          <h1>Form Menu</h1>
           <div class="input-group">
             <label for="menu">Menu</label>
-            <select id="menu" onchange="updatePrice();">
-              <option value="BurgerPRamlee">Burger P Ramlee</option>
-              <option value="NasiLemak">Nasi Lemak KFC</option>
+            <select id="menu" onchange="updateHarga();">
+              <option value="0">Pilih Menu</option>
+              <option value="1">Burger P Ramlee</option>
+              <option value="2">Nasi Lemak KFC</option>
             </select>
           </div>
 
@@ -37,7 +38,7 @@
               min="1"
               name="porsi"
               id="porsi"
-              onchange="updatePrice()"
+              onchange="updateHarga()"
             />
           </div>
           <div class="input-group">
@@ -54,24 +55,46 @@
             />Transfer
             <input type="radio" name="payment" value="COD" id="payment" />COD
           </div>
+          <div class="input-group">
+            <label for="total">total</label>
+            <input <input type="text" name="bayar" id="bayar" />
+          </div>
+          <div class="input-group">
+            <label for="alamat">alamat</label>
+            <textarea
+              name="alamat"
+              id="alamat"
+              cols="25"
+              placeholder="Jalan, Kampung/Kelurahan, Kota, Kode Pos..."
+              rows="3"
+            ></textarea>
+          </div>
+          <div class="input-group">
+            <label for="ekspedisi">Ekspedisi</label>
+            <select name="ekspedisi" id="ekspedisi">
+              <option value="Go-Food">Go-Food</option>
+              <option value="Shopee-Food">Shopee-Food</option>
+            </select>
+          </div>
           <!-- <input type="password" placeholder="Password" /> -->
           <button>Order</button>
         </form>
       </div>
       <div class="form-container sign-in-container">
-        <div class="slider">
-          <form action="#">
-            <img class="img-kiri" src="images/makanan1.jpeg" alt="burger" />
-            <h1>Burger P Ramlee</h1>
-            <span style="font-weight: bold">Rp. 20.000</span>
-            <span>
-              Menu inovatif terbaharu kami, Burger P. Ramlee merupakan satu menu
-              gabungan memikat KFC Zinger dengan makanan kegemaran P. Ramlee,
-              Nasi Kandar.
-            </span>
-            <button id="Buy">Buy</button>
-          </form>
+        <div class="slider overla">
+          <img class="img-kiri" src="images/makanan1.jpeg" alt="burger" />
+          <h1>Burger P Ramlee</h1>
+          <span style="font-weight: bold">Rp. 20.000</span><br />
+          <span>
+            Menu inovatif terbaharu kami, Burger P. Ramlee merupakan satu menu
+            gabungan memikat KFC Zinger dengan makanan kegemaran P. Ramlee, Nasi
+            Kandar.
+          </span>
+          <br />
         </div>
+        <center>
+          <button id="Buy">Buy</button>
+        </center>
       </div>
       <div class="overlay-container">
         <div class="overlay">

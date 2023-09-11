@@ -89,20 +89,21 @@ form {
 input {
   background-color: #eee;
   border: none;
-  padding: 12px 15px;
-  margin: 8px 0;
+  padding: 5px 10px;
+  margin: 5px 0;
   width: 100%;
 }
-.img-kiri {
+.form-container.sign-in-container .img-kiri {
   border-radius: 15px;
-  max-width: 100%;
-  margin: 30px;
+  max-width: 74%;
+  margin: 20px auto; /* Pusatkan gambar */
 }
 
 .img-kanan {
   border-radius: 15px;
-  max-width: 100%;
+  width: 100%;
   margin-bottom: 30px;
+  margin: 20px auto;
 }
 
 .container {
@@ -116,14 +117,18 @@ input {
   min-height: 480px;
   margin-top: 15px;
 }
-
 .form-container {
   position: absolute;
   top: 0;
   height: 100%;
+  max-width: 90%;
+  margin: 0 auto;
   transition: all 0.6s ease-in-out;
 }
-
+.form-container.sign-in-container .slider {
+  padding: 20px; /* Tambahkan padding agar kontennya lebih terpisah */
+  text-align: center;
+}
 .sign-in-container {
   left: 0;
   width: 50%;
@@ -229,21 +234,6 @@ input {
   transform: translateX(20%);
 }
 
-.social-container {
-  margin: 20px 0;
-}
-
-.social-container a {
-  border: 1px solid #dddddd;
-  border-radius: 50%;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 5px;
-  height: 40px;
-  width: 40px;
-}
-
 footer {
   background-color: #222;
   color: #fff;
@@ -283,9 +273,9 @@ footer a {
 }
 
 .input-group select,
-.input-group input {
+.input-group input,
+.input-group textarea {
   flex: 2;
-  padding: 5px;
   padding-right: 5%;
   border: 1px solid #ccc;
   border-radius: 5px;
