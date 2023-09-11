@@ -13,7 +13,7 @@
     <h3>JUALAN</h3>
     <div class="container" id="container">
       <div class="form-container sign-up-container">
-        <form action="#" name="order" method="post">
+        <form action="" name="order" method="post">
           <h1>Form Menu</h1>
           <div class="input-group">
             <label for="menu">Menu</label>
@@ -32,6 +32,7 @@
               name="porsi"
               id="porsi"
               onchange="updateHarga()"
+              required
             />
           </div>
           <div class="input-group">
@@ -45,6 +46,7 @@
               name="payment"
               value="Transfer"
               id="payment"
+              required
             />Transfer
             <input type="radio" name="payment" value="COD" id="payment" />COD
           </div>
@@ -60,6 +62,7 @@
               cols="25"
               placeholder="Jalan, Kampung/Kelurahan, Kota, Kode Pos..."
               rows="3"
+              required
             ></textarea>
           </div>
           <div class="input-group">
@@ -69,7 +72,7 @@
               <option value="Shopee-Food">Shopee-Food</option>
             </select>
           </div>
-          <button>Order</button>
+          <button onclick="success();">Order</button>
         </form>
       </div>
       <div class="form-container sign-in-container">

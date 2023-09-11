@@ -41,3 +41,7 @@ porsiInput.addEventListener("input", function () {
     document.order.bayar.value = "";
   }
 });
+
+function success() {
+  alert("Pesanan Berhasil!");
+}
