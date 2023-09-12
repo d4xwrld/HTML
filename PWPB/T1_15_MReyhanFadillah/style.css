@@ -92,7 +92,7 @@ input {
   margin: 5px 0;
   width: 100%;
 }
-.form-container.sign-in-container .img-kiri {
+.layout-container.makanan1-container .img-kiri {
   border-radius: 15px;
   width: 80%;
   margin-bottom: 20px;
@@ -116,7 +116,7 @@ input {
   min-height: 480px;
   margin-top: 15px;
 }
-.form-container {
+.layout-container {
   position: absolute;
   top: 0;
   height: 100%;
@@ -124,35 +124,35 @@ input {
   margin: 0 auto;
   transition: all 0.6s ease-in-out;
 }
-.form-container button {
+.layout-container button {
   margin-top: 5%;
 }
-.form-container label {
+.layout-container label {
   font-size: 90%;
 }
-.form-container.sign-in-container .slider {
+.layout-container.makanan1-container .slider {
   padding: 20px;
   text-align: center;
   margin-bottom: 0;
 }
-.sign-in-container {
+.makanan1-container {
   left: 0;
   width: 50%;
   z-index: 2;
 }
 
-.container.right-panel-active .sign-in-container {
+.container.right-panel-active .makanan1-container {
   transform: translateX(100%);
 }
 
-.sign-up-container {
+.makanan2-container {
   left: 0;
   width: 50%;
   opacity: 0;
   z-index: 1;
 }
 
-.container.right-panel-active .sign-up-container {
+.container.right-panel-active .makanan2-container {
   transform: translateX(100%);
   opacity: 1;
   z-index: 5;
@@ -223,20 +223,20 @@ input {
   transition: transform 0.6s ease-in-out;
 }
 
-.overlay-left {
+.overlay-kiri {
   transform: translateX(-20%);
 }
 
-.container.right-panel-active .overlay-left {
+.container.right-panel-active .overlay-kiri {
   transform: translateX(0);
 }
 
-.overlay-right {
+.overlay-kanan {
   right: 0;
   transform: translateX(0);
 }
 
-.container.right-panel-active .overlay-right {
+.container.right-panel-active .overlay-kanan {
   transform: translateX(20%);
 }
 
@@ -264,13 +264,13 @@ footer a {
   color: #3c97bf;
   text-decoration: none;
 }
-.input-group {
+.input-makanan {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
 }
 
-.input-group label {
+.input-makanan label {
   flex: 1;
   margin-left: 0;
   margin-right: 5px;
@@ -278,22 +278,22 @@ footer a {
   text-align: left;
 }
 
-.input-group select,
-.input-group input,
-.input-group textarea {
+.input-makanan select,
+.input-makanan input,
+.input-makanan textarea {
   flex: 2;
   padding-right: 5%;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
-.input-group input[type="number"] {
+.input-makanan input[type="number"] {
   width: 25%;
   text-align: center;
 }
 
-.input-group select:focus,
-.input-group input:focus {
+.input-makanan select:focus,
+.input-makanan input:focus {
   outline: none;
   border-color: #007bff;
 }
