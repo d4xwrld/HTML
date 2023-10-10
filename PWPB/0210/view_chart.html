@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 100%;
+        }
+        img{
+            width: 100px;
+        }
+        td{
+            padding: 10px;
+        }
+        .button-plus{
+            background-color: white;
+        }
+        .button-min{
+            background-color: red;
+            color: white;
+        }
+        input{
+            width: 50%;
+        }
+        span{
+            font-size: small;
+        }
+        button{
+            width: 15%;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" cellspacing="0">
+        <tr>
+            <td>Product</td>
+            <td>Description</td>
+            <td>Quantity/Update</td>
+            <td>Price</td>
+            <td>Discount</td>
+            <td>Tax</td>
+            <td>Total</td>
+        </tr>
+        <tr>
+            <td><img src="images/camera.png" alt="" width="auto"></td>
+            <td><p>Camera Canon</p><span>Camera Canon</span></td>
+            <td><input type="number" min="1"><button class="button-plus">+</button><button class="button-plus">-<button class="button-min">x</button></td>
+            <td>$120.00</td>
+            <td>$12.00</td>
+            <td>$15.00</td>
+            <td>$110.00</td>
+        </tr>
+        <tr>
+            <td><img src="images/sdCard.png" alt=""></td>
+            <td><p>SD Card</p><span>128GB</span></td>
+            <td><input type="number" min="1"><button class="button-plus">+</button><button class="button-plus">-<button class="button-min">x</button></td>
+            <td>$7.00</td>
+            <td>-</td>
+            <td>$1.00</td>
+            <td>$8.00</td>
+        </tr>
+        <tr>
+            <td><img src="images/camera.png" alt=""></td>
+            <td>MSAA AST</td>
+            <td><input type="number" min="1"><button class="button-plus">+</button><button class="button-plus">-<button class="button-min">x</button></td>
+            <td>$120.00</td>
+            <td>$12.00</td>
+            <td>$15.00</td>
+            <td>$110.00</td>
+        </tr>
+        <tr>
+            <td colspan="6" align="right">Total Price</td>
+            <td>$228.00</td>
+        </tr>
+        <tr>
+            <td colspan="6" align="right">Total Price</td>
+            <td>$228.00</td>
+        </tr>
+        <tr>
+            <td colspan="6" align="right">Total Discount</td>
+            <td>$58.00</td>
+        </tr>
+        <tr>
+            <td colspan="6" align="right">Total Tax</td>
+            <td>$31.00</td>
+        </tr>
+        <tr>
+            <td colspan="6" align="right" style="font-weight: bold;">TOTAL ($228 - $50 + $31) =</td>
+            <td style="color:white; background-color: rgb(121, 0, 0);">$115.00</td>
+        </tr>
+    </table>
+</body>
+</html>
